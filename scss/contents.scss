@@ -1,0 +1,200 @@
+@import "vars";
+@import "mixin";
+
+.subVisual {
+  background-color: #fff;
+  .container {
+    height: 250px;
+    text-align: center;
+    h2 {
+      padding-top: 150px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+}
+.subContents {
+  .container {
+    width: 1000px;
+    text-align: center;
+    .inner {
+      margin-bottom: 50px;
+      color: #777;
+      text-align: left;
+      input[type="text"] {
+        width: 100%;
+        height: 55px;
+        padding: 0;
+        font: inherit;
+        font-size: 18px;
+        font-size: 18px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        caret-color: #ffde00;
+        outline: none;
+      }
+      .agreement {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: #000;
+        input[type="checkbox"] {
+          width: 0;
+          height: 0;
+          position: absolute;
+          overflow: hidden;
+          padding: 0;
+        }
+        input:checked ~ span:before {
+          color: rgb(255, 255, 255);
+          background-color: #000;
+          border-color: #000;
+        }
+        strong {
+          font-weight: 500;
+        }
+        span {
+          font-size: 18px;
+          &:before {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            transform: translateY(2px);
+            content: "\e876";
+            font-family: "Material Icons";
+            border-radius: 2px;
+            color: #fff;
+            transition: all 0.25s ease-in-out;
+          }
+        }
+      }
+    }
+    textarea {
+      width: 95%;
+      padding: 30px;
+      font: inherit;
+      border: none;
+      resize: none;
+      outline: none;
+      background-color: rgba(247, 240, 240, 0.3);
+    }
+  }
+  .basic {
+    display: flex;
+    input {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  .select {
+    display: flex;
+    dl {
+      width: 100%;
+      &:first-child {
+        margin-right: 20px;
+      }
+      select {
+        width: 100%;
+        height: 55px;
+        font-size: 18px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        caret-color: #ffde00;
+        outline: none;
+      }
+    }
+  }
+  .question {
+    dl {
+      margin-bottom: 30px;
+    }
+    textarea {
+      width: 100%;
+      padding: 30px;
+      font: inherit;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+      outline: none;
+      box-sizing: border-box;
+      background-color: #fff;
+      &:focus {
+        border: 1px solid $main-color !important;
+      }
+      &::placeholder {
+        color: #ccc;
+        font-size: 18px;
+        opacity: 1;
+      }
+    }
+  }
+  .attachment {
+    margin-bottom: 100px;
+    .fileBox {
+      margin-bottom: 20px;
+
+      dd {
+        display: flex;
+        label {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 120px;
+          margin-left: 20px;
+          padding: 10px 30px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #000;
+          border: 1px solid #000;
+          background-color: #fff;
+          border-radius: 5px;
+        }
+      }
+      input[type="file"] {
+        width: 0;
+        height: 0;
+        position: absolute;
+        overflow: hidden;
+        padding: 0;
+        border: none;
+      }
+    }
+    p {
+      font-size: 15px;
+      line-height: 1.5;
+      span:before {
+        margin-right: 8px;
+        content: "·";
+      }
+    }
+  }
+  button {
+    width: 100%;
+    margin-bottom: 300px;
+    padding: 30px 100px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    border-radius: 5px;
+  }
+}
+input {
+  &:focus {
+    border-bottom: 1px solid $main-color !important;
+    outline: none !important;
+  }
+  &::placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+}
+select:focus {
+  border-bottom: 1px solid $main-color !important;
+  outline: none !important;
+}

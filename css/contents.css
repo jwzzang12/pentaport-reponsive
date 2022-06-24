@@ -1,0 +1,192 @@
+@charset "UTF-8";
+.subVisual {
+  background-color: #fff;
+}
+.subVisual .container {
+  height: 250px;
+  text-align: center;
+}
+.subVisual .container h2 {
+  padding-top: 150px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.subContents .container {
+  width: 1000px;
+  text-align: center;
+}
+.subContents .container .inner {
+  margin-bottom: 50px;
+  color: #777;
+  text-align: left;
+}
+.subContents .container .inner input[type=text] {
+  width: 100%;
+  height: 55px;
+  padding: 0;
+  font: inherit;
+  font-size: 18px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  caret-color: #ffde00;
+  outline: none;
+}
+.subContents .container .inner .agreement {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #000;
+}
+.subContents .container .inner .agreement input[type=checkbox] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+}
+.subContents .container .inner .agreement input:checked ~ span:before {
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  border-color: #000;
+}
+.subContents .container .inner .agreement strong {
+  font-weight: 500;
+}
+.subContents .container .inner .agreement span {
+  font-size: 18px;
+}
+.subContents .container .inner .agreement span:before {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  transform: translateY(2px);
+  content: "\e876";
+  font-family: "Material Icons";
+  border-radius: 2px;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+.subContents .container textarea {
+  width: 95%;
+  padding: 30px;
+  font: inherit;
+  border: none;
+  resize: none;
+  outline: none;
+  background-color: rgba(247, 240, 240, 0.3);
+}
+.subContents .basic {
+  display: flex;
+}
+.subContents .basic input:first-child {
+  margin-right: 20px;
+}
+.subContents .select {
+  display: flex;
+}
+.subContents .select dl {
+  width: 100%;
+}
+.subContents .select dl:first-child {
+  margin-right: 20px;
+}
+.subContents .select dl select {
+  width: 100%;
+  height: 55px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  caret-color: #ffde00;
+  outline: none;
+}
+.subContents .question dl {
+  margin-bottom: 30px;
+}
+.subContents .question textarea {
+  width: 100%;
+  padding: 30px;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.subContents .question textarea:focus {
+  border: 1px solid #e84464 !important;
+}
+.subContents .question textarea::placeholder {
+  color: #ccc;
+  font-size: 18px;
+  opacity: 1;
+}
+.subContents .attachment {
+  margin-bottom: 100px;
+}
+.subContents .attachment .fileBox {
+  margin-bottom: 20px;
+}
+.subContents .attachment .fileBox dd {
+  display: flex;
+}
+.subContents .attachment .fileBox dd label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  margin-left: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid #000;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.subContents .attachment .fileBox input[type=file] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+}
+.subContents .attachment p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.subContents .attachment p span:before {
+  margin-right: 8px;
+  content: "·";
+}
+.subContents button {
+  width: 100%;
+  margin-bottom: 300px;
+  padding: 30px 100px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: #000;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-bottom: 1px solid #e84464 !important;
+  outline: none !important;
+}
+input::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+select:focus {
+  border-bottom: 1px solid #e84464 !important;
+  outline: none !important;
+}
