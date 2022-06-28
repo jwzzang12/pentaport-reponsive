@@ -2,6 +2,26 @@ const menu = $("#menu");
 const list = $("#gnb .list");
 const textLogo = $("#textLogo");
 const subContents = $(".subContents");
+const circleBox = $(".circleBox");
+const circleImg = $(".circleBox img");
+
+$("img").on("dragstart", false);
+
+circleBox.hover(
+  function () {
+    // let idx = circleBox.index($(this));
+    // let imgH = circleImg.eq(idx).height();
+    const scrollY = $(window).scrollTop();
+    const h = $(window).height();
+    const imgPosition = scrollY + h / 2 - h / 4;
+    $(this).addClass("pop");
+    circleImg.css("top", imgPosition);
+  },
+  function () {
+    $(this).removeClass("pop");
+    circleImg.css("top", "");
+  }
+);
 
 menu.on("click", function () {
   list.toggleClass("open");

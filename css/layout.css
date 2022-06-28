@@ -3,7 +3,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #111;
-  min-height: 2000px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -71,7 +70,7 @@ input {
 
 #menu {
   position: absolute;
-  right: 50px;
+  right: 70px;
   font-size: 30px;
   font-weight: 900;
   color: #e84464;
@@ -79,24 +78,17 @@ input {
   top: 50%;
   transform: translateY(-50%);
 }
-#menu:before {
-  content: "";
-  width: 200px;
-  height: 120px;
-  background-color: #fff;
-  position: absolute;
-  top: -52px;
-  left: -29px;
-  z-index: -1;
-  display: none;
-}
 #menu.black {
   color: #111;
 }
 #menu.open {
-  right: 300px;
+  right: 250px;
+  padding: 50px;
 }
 
+#gnb .menuTickets {
+  display: none;
+}
 #gnb .list {
   position: absolute;
   top: 0;
@@ -119,6 +111,7 @@ input {
 }
 #gnb .list > li .depth02 {
   padding: 20px 0;
+  font-weight: 600;
   text-align: center;
 }
 #gnb .list > li .depth02 li a {
@@ -148,10 +141,24 @@ input {
   justify-content: space-between;
   margin-top: 30px;
 }
-#footer .links div span {
+#footer .links div span:not(:last-child) {
   margin-right: 50px;
 }
 
+@media all and (max-width: 1400px) {
+  #gnb .menuTickets {
+    display: block;
+    padding-top: 30px;
+  }
+
+  #footer {
+    padding: clamp(30px, 4vw, 50px) clamp(60px, 7vw, 100px);
+    font-size: 16px;
+  }
+  #footer .links div span:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 @media all and (max-width: 1200px) {
   #header {
     height: 100px;
@@ -174,10 +181,21 @@ input {
   #gnb .list {
     padding: 30px 0;
   }
+
+  #footer .copyright {
+    text-align: center;
+  }
+  #footer .links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #footer .links div {
+    margin: 20px;
+  }
 }
 @media all and (max-width: 960px) {
   #logo {
-    left: 30px;
+    left: 20px;
   }
   #logo #textLogo {
     display: none;
@@ -191,11 +209,22 @@ input {
   }
 
   #menu {
-    font-size: clamp(25px, 4vw, 30px);
-    right: 30px;
+    font-size: clamp(18px, 4vw, 30px);
   }
   #menu.open {
-    right: 280px;
+    padding: 40px 30px;
+    background: #fff;
+  }
+
+  #footer .links {
+    display: block;
+    text-align: center;
+  }
+  #footer .links div {
+    margin: 10px;
+  }
+  #footer .links div:last-child {
+    margin: 20px;
   }
 }
 @media all and (max-width: 640px) {
@@ -204,11 +233,8 @@ input {
   }
 
   #menu.open {
-    right: 250px;
-    color: #e84464;
-  }
-  #menu.open:before {
-    display: block;
+    right: clamp(180px, 35vw, 200px);
+    padding: 30px 20px;
   }
 
   #logo a {
@@ -218,8 +244,24 @@ input {
     width: 40px;
   }
 
+  #gnb .list {
+    padding: 15px 0;
+  }
   #gnb .list > li .depth01 {
-    font-size: clamp(25px, 4vw, 30px);
+    padding: 0 45px;
+    font-size: clamp(18px, 4vw, 30px);
+  }
+  #gnb .list > li .depth02 {
+    padding: 0 45px;
+    font-size: clamp(14px, 4vw, 18px);
+  }
+  #gnb .menuTickets {
+    padding-top: 0px;
+  }
+
+  #footer {
+    padding: clamp(20px, 4vw, 50px) 15px;
+    font-size: 14px;
   }
 }
 @media all and (min-width: 1201px) {
