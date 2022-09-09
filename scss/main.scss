@@ -32,15 +32,15 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  iframe {
-    width: 100%;
-    height: 100vh;
-    transform: scale(1.5);
-    object-fit: cover;
-    text-align: center;
-    // display: flex;
-    // justify-content: center;
-  }
+  // iframe {
+  //   width: 100%;
+  //   height: 100vh;
+  //   transform: scale(1.5);
+  //   object-fit: cover;
+  //   text-align: center;
+  //   // display: flex;
+  //   // justify-content: center;
+  // }
   background: {
     image: url("../images/main/mainVisual.jpeg");
     attachment: fixed;
@@ -74,11 +74,11 @@
   }
   .ticketBox {
     display: none;
-    width: 250px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     position: absolute;
     right: 70px;
-    bottom: 100px;
+    bottom: 60px;
     z-index: 10;
     padding: 40px;
     color: #000;
@@ -86,15 +86,15 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
     &:before {
       position: absolute;
-      top: 15px;
-      right: 15px;
-      bottom: 15px;
-      left: 15px;
+      top: 12px;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
       border: 5px dotted #111;
       content: "";
     }
     span {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 900;
     }
     .lang {
@@ -102,7 +102,7 @@
       justify-content: center;
       position: relative;
       margin-top: 25px;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 700;
       a {
         padding: 5px 10px;
@@ -111,12 +111,12 @@
           background-color: #111;
         }
         &:nth-child(1) {
-          margin-right: 30px;
+          margin-right: 10px;
           &:after {
-            width: 5px;
+            width: 4px;
             height: 20px;
             position: absolute;
-            left: 127px;
+            left: 105px;
             content: "";
             background-color: #111;
             @include absCenter(false, true);
@@ -206,15 +206,15 @@
     border: 10px double #fff;
   }
   .lineUp {
-    padding-top: 50px;
+    // padding-top: 50px;
     li {
       text-align: center;
       img {
-        height: 550px;
+        height: 440px;
       }
     }
     p {
-      padding: 50px 0 100px;
+      padding: 20px 0 100px;
       font-size: 36px;
       font-weight: 700;
     }
@@ -376,7 +376,7 @@
     .lineUp {
       li {
         img {
-          height: clamp(250px, 48vw, 550px);
+          height: clamp(250px, 48vw, 440px);
         }
       }
       p {
@@ -426,9 +426,9 @@
       border: 10px double #111;
     }
   }
-  .player {
-    display: none;
-  }
+  // .player {
+  //   display: none;
+  // }
   #mainVisual {
     #mainTitleBox {
       top: 50%;

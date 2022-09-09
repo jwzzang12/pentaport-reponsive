@@ -97,7 +97,6 @@
   .container {
     width: clamp(300px, 85vw, 1500px);
   }
-
   #photo .tab .tabContents .circleBox {
     width: clamp(110px, 20vw, 350px);
     height: clamp(110px, 20vw, 350px);
@@ -111,7 +110,6 @@
   .container {
     border: none;
   }
-
   #photo .tab {
     padding-bottom: clamp(70px, 5vw, 100px);
   }

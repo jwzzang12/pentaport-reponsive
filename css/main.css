@@ -32,13 +32,6 @@
   background-attachment: fixed;
   background-size: cover;
 }
-#mainVisual iframe {
-  width: 100%;
-  height: 100vh;
-  transform: scale(1.5);
-  object-fit: cover;
-  text-align: center;
-}
 #mainVisual:before {
   top: 0;
   right: 0;
@@ -68,11 +61,11 @@
 }
 #mainVisual .ticketBox {
   display: none;
-  width: 250px;
-  height: 100px;
+  width: 200px;
+  height: 80px;
   position: absolute;
   right: 70px;
-  bottom: 100px;
+  bottom: 60px;
   z-index: 10;
   padding: 40px;
   color: #000;
@@ -81,15 +74,15 @@
 }
 #mainVisual .ticketBox:before {
   position: absolute;
-  top: 15px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
   border: 5px dotted #111;
   content: "";
 }
 #mainVisual .ticketBox span {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 900;
 }
 #mainVisual .ticketBox .lang {
@@ -97,7 +90,7 @@
   justify-content: center;
   position: relative;
   margin-top: 25px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 }
 #mainVisual .ticketBox .lang a {
@@ -108,13 +101,13 @@
   background-color: #111;
 }
 #mainVisual .ticketBox .lang a:nth-child(1) {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 #mainVisual .ticketBox .lang a:nth-child(1):after {
-  width: 5px;
+  width: 4px;
   height: 20px;
   position: absolute;
-  left: 127px;
+  left: 105px;
   content: "";
   background-color: #111;
   position: absolute;
@@ -180,16 +173,11 @@
   background-color: #111;
 }
 #artist .wavy {
-  --c: #fff;
-  /* Color */
-  --t: 5px;
-  /* Thickness */
-  --h: 50px;
-  /* Height (vertical distance between two curve) */
-  --w: 120px;
-  /* Width  */
-  --p: 13px;
-  /* adjust this to correct the position when changing the other values*/
+  --c: #fff; /* Color */
+  --t: 5px; /* Thickness */
+  --h: 50px; /* Height (vertical distance between two curve) */
+  --w: 120px; /* Width  */
+  --p: 13px; /* adjust this to correct the position when changing the other values*/
   display: inline-block;
   width: 100%;
   height: 350px;
@@ -205,17 +193,14 @@
 #artist span {
   border: 10px double #fff;
 }
-#artist .lineUp {
-  padding-top: 50px;
-}
 #artist .lineUp li {
   text-align: center;
 }
 #artist .lineUp li img {
-  height: 550px;
+  height: 440px;
 }
 #artist .lineUp p {
-  padding: 50px 0 100px;
+  padding: 20px 0 100px;
   font-size: 36px;
   font-weight: 700;
 }
@@ -300,11 +285,9 @@
   .divider {
     height: clamp(80px, 15vw, 215px);
   }
-
   #timeTable .timeTableBox .day span {
     font-size: clamp(16px, 3vw, 32px);
   }
-
   #subscription .ultimateFormBox {
     padding: 50px clamp(80px, 14vw, 250px) clamp(100px, 15vw, 190px);
   }
@@ -320,7 +303,6 @@
     padding: 0 clamp(35px, 5vw, 100px);
     border: 7px double #111;
   }
-
   #mainVisual #mainTitleBox {
     margin: 0;
     font-size: clamp(40px, 7vw, 80px);
@@ -328,7 +310,6 @@
   #mainVisual #mainTitleBox span {
     font-size: clamp(25px, 5vw, 70px);
   }
-
   #timeTable .timeTableBox .day {
     padding: 50px 5px 80px;
   }
@@ -347,28 +328,22 @@
   #timeTable .more {
     font-size: clamp(12px, 2vw, 24px);
   }
-
   #artist span {
     border: 7px double #fff;
   }
   #artist .lineUp li img {
-    height: clamp(250px, 48vw, 550px);
+    height: clamp(250px, 48vw, 440px);
   }
   #artist .lineUp p {
     padding: 50px 0 clamp(50px, 4vw, 80px);
     font-size: clamp(20px, 3vw, 36px);
   }
   #artist .wavy {
-    --c: #fff;
-    /* Color */
-    --t: 3px;
-    /* Thickness */
-    --h: 50px;
-    /* Height (vertical distance between two curve) */
-    --w: 120px;
-    /* Width  */
-    --p: 10px;
-    /* adjust this to correct the position when changing the other values*/
+    --c: #fff; /* Color */
+    --t: 3px; /* Thickness */
+    --h: 50px; /* Height (vertical distance between two curve) */
+    --w: 120px; /* Width  */
+    --p: 10px; /* adjust this to correct the position when changing the other values*/
     display: inline-block;
     width: 100%;
     height: 250px;
@@ -381,7 +356,6 @@
     top: 50%;
     transform: translateY(-50%);
   }
-
   #subscription .ultimateFormBox {
     padding: 50px 0 clamp(100px, 15vw, 190px);
     border: none;
@@ -394,11 +368,6 @@
   .titleBox span {
     border: 10px double #111;
   }
-
-  .player {
-    display: none;
-  }
-
   #mainVisual #mainTitleBox {
     top: 50%;
     left: 0;
@@ -412,7 +381,6 @@
     background-color: #111;
     animation: scrollDown 1s linear;
   }
-
   #timeTable .timeTableBox {
     flex-direction: column;
   }
@@ -436,14 +404,12 @@
   #timeTable .timeTableBox .day span {
     padding: clamp(5px, 0.5vw, 10px);
   }
-
   #artist {
     height: auto;
   }
   #artist .lineUp {
     padding-bottom: 0px;
   }
-
   #subscription {
     font-size: clamp(18px, 3vw, 28px);
   }
@@ -459,25 +425,21 @@
   .divider {
     display: none;
   }
-
   .titleBox {
     font-size: 25px;
   }
-
   #timeTable .timeTableBox .day {
     padding: 30px 10px 40px;
   }
   #timeTable .timeTableBox .day:last-child {
     padding: 30px 10px 60px;
   }
-
   #artist .wavy {
     display: none;
   }
   #artist .lineUp {
     padding-top: 15px;
   }
-
   #subscription .ultimateFormBox .formBox input {
     height: 20px;
     font-size: 14px;

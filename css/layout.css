@@ -150,7 +150,6 @@ input {
     display: block;
     padding-top: 30px;
   }
-
   #footer {
     padding: clamp(30px, 4vw, 50px) clamp(60px, 7vw, 100px);
     font-size: 16px;
@@ -163,7 +162,6 @@ input {
   #header {
     height: 100px;
   }
-
   #logo {
     left: 30px;
   }
@@ -173,15 +171,12 @@ input {
   #logo a img {
     width: 200px;
   }
-
   #menu {
     right: 30px;
   }
-
   #gnb .list {
     padding: 30px 0;
   }
-
   #footer .copyright {
     text-align: center;
   }
@@ -207,7 +202,6 @@ input {
     display: block;
     width: 60px;
   }
-
   #menu {
     font-size: clamp(18px, 4vw, 30px);
   }
@@ -215,7 +209,6 @@ input {
     padding: 40px 30px;
     background: #fff;
   }
-
   #footer .links {
     display: block;
     text-align: center;
@@ -231,19 +224,16 @@ input {
   #header {
     height: 70px;
   }
-
   #menu.open {
     right: clamp(180px, 35vw, 200px);
     padding: 30px 20px;
   }
-
   #logo a {
     height: 70px;
   }
   #logo a #fixedIcon {
     width: 40px;
   }
-
   #gnb .list {
     padding: 15px 0;
   }
@@ -258,7 +248,6 @@ input {
   #gnb .menuTickets {
     padding-top: 0px;
   }
-
   #footer {
     padding: clamp(20px, 4vw, 50px) 15px;
     font-size: 14px;
